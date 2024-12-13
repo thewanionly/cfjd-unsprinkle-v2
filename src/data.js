@@ -1,98 +1,66 @@
-/**
- * In a real app, this data would likely live in a database,
- * and be fetched from an API, either at runtime or at
- * compile-time.
- *
- * Keep in mind, this workshop is focused on CSS. In order
- * to make it easy to focus on the styling, we're cutting
- * some corners when it comes to our data management, and
- * our JavaScript in general. Please don't try to glean
- * any best-practices from stuff like this data file!
- */
-
-const SHOES = [
+const data = [
   {
-    slug: 'tech-challenge',
-    name: 'NikeCourt Tech Challenge 20',
-    imageSrc: '/assets/tech-challenge.jpg',
-    price: 16500,
-    salePrice: null,
-    // 1 hour ago! 🔥
-    releaseDate: Date.now() - 1000 * 60 * 60 * 1,
-    numOfColors: 2,
+    id: 'a',
+    src: '/images/vincent-van-zalinge-bird.jpg',
+    alt: 'A tiny shrewd turquoise-and-amber bird',
+    tags: [
+      'bird',
+      'blurred background',
+      'wildlife',
+      'animal in its natural habitat',
+    ],
   },
   {
-    slug: 'metcon-5',
-    name: 'Nike Metcon 5 AMP',
-    imageSrc: '/assets/metcon-5.jpg',
-    price: 16500,
-    salePrice: null,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 2,
-    numOfColors: 1,
+    id: 'b',
+    src: '/images/alexandru-rotariu-dog.jpg',
+    alt: 'A serious-looking grey dog with cool glacier eyes',
+    tags: ['dog', 'HD'],
   },
   {
-    slug: 'phantom',
-    name: 'Nike Phantom Vision',
-    imageSrc: '/assets/phantom.jpg',
-    price: 16500,
-    salePrice: null,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 4,
-    numOfColors: 4,
+    id: 'c',
+    src: '/images/scott-walsh-fox.jpg',
+    alt: 'A happy-looking cute wild fox in nature, near some pink flowers',
+    tags: ['fox', 'flowers'],
   },
   {
-    slug: 'pegasus',
-    name: 'Nike Air Zoom Pegasus',
-    imageSrc: '/assets/pegasus.jpg',
-    price: 16500,
-    salePrice: null,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 16,
-    numOfColors: 1,
+    id: 'd',
+    src: '/images/andy-holmes-giraffe.jpg',
+    alt: 'A giraffe sticking its black tongue out',
+    tags: ['giraffe', 'dramatic'],
   },
   {
-    slug: 'joyride',
-    name: 'Nike Joyride Dual Run',
-    imageSrc: '/assets/joyride.jpg',
-    price: 17000,
-    salePrice: null,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 40,
-    numOfColors: 2,
+    id: 'e',
+    src: '/images/karsten-winegeart-dog.jpg',
+    alt: 'A small dog wearing a golden "Champions" hoodie',
+    tags: ['dog', 'cute', 'animal wearing human clothes'],
   },
   {
-    slug: 'legend-academy',
-    name: 'Nike Tiempo Legend 8',
-    imageSrc: '/assets/legend-academy.jpg',
-    price: 16500,
-    salePrice: 12500,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 50,
-    numOfColors: 8,
+    id: 'f',
+    src: '/images/marko-blazevic-cat.jpg',
+    alt: 'A small kitten standing on its back legs, reaching up towards the camera',
+    tags: ['kitten', 'cat', '#cute'],
   },
   {
-    slug: 'react-infinity',
-    name: 'Nike React Infinity Pro',
-    imageSrc: '/assets/react-infinity.jpg',
-    price: 16000,
-    salePrice: 14500,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 75,
-    numOfColors: 1,
+    id: 'g',
+    src: '/images/mark-stoop-lizard.jpg',
+    alt: 'A relaxed green lizard, sitting on a wooden beam',
+    tags: [
+      'lizard',
+      'world-famous insurance salesman from the commercials',
+    ],
   },
   {
-    slug: 'phantom-flyknit',
-    name: 'Nike React Phantom Run Flyknit 2',
-    imageSrc: '/assets/phantom-flyknit.jpg',
-    price: 18500,
-    salePrice: 16000,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 100,
-    numOfColors: 4,
+    id: 'h',
+    src: '/images/geran-de-klerk-squirrel.jpg',
+    alt: 'A fuzzy squirrel, highlighted in a dark backdrop',
+    tags: ['squirrel', 'animal', 'fuzzy'],
   },
   {
-    slug: 'lebron',
-    name: 'LeBron 17',
-    imageSrc: '/assets/lebron.jpg',
-    price: 26000,
-    salePrice: null,
-    releaseDate: Date.now() - 1000 * 60 * 60 * 24 * 120,
-    numOfColors: 1,
+    id: 'i',
+    src: '/images/wexor-tmg-turtle.jpg',
+    alt: 'A large tropical turtle swimming in water',
+    tags: ['turtle', 'ocean', 'flippers'],
   },
 ];
 
-export default SHOES;
+export default data;
