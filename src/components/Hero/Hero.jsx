@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage>
+      <picture>
         <source
           type='image/avif'
           srcset='
@@ -19,8 +19,8 @@ const Hero = () => {
             /images/hero-img@2x.jpg 2x,
             /images/hero-img@3x.jpg 3x'
         />
-        <img alt='A cat staring straight at the viewer' src='/images/hero-img.jpg' />
-      </HeroImage>
+        <HeroImage alt='A cat staring straight at the viewer' src='/images/hero-img.jpg' />
+      </picture>
       <Swoop src='/swoop.svg' />
     </Wrapper>
   );
@@ -36,15 +36,13 @@ const Wrapper = styled.section`
   background: hsl(0deg 0% 1%);
 `;
 
-const HeroImage = styled.picture`
-  img {
-    display: block;
+const HeroImage = styled.img`
+  display: block;
 
-    width: 500px;
-    height: 500px;
-    max-height: 100%;
-    object-fit: cover;
-  }
+  width: 500px;
+  height: 500px;
+  max-height: 100%;
+  object-fit: cover;
 `;
 
 const Swoop = styled.img`
