@@ -8,18 +8,18 @@ const Hero = () => {
         <source
           type='image/avif'
           srcset='
-      /images/hero-img.avif 1x,
-      /images/hero-img@2x.avif 2x,
-      /images/hero-img@3x.avif 3x'
+            /images/hero-img.avif 1x,
+            /images/hero-img@2x.avif 2x,
+            /images/hero-img@3x.avif 3x'
         />
         <source
           type='image/jpg'
           srcset='
-/images/hero-img.jpg 1x,
-/images/hero-img@2x.jpg 2x,
-/images/hero-img@3x.jpg 3x'
+            /images/hero-img.jpg 1x,
+            /images/hero-img@2x.jpg 2x,
+            /images/hero-img@3x.jpg 3x'
         />
-        <img alt='A cat staring straight at the viewer' src="/images/hero-img.jpg'" />
+        <img alt='A cat staring straight at the viewer' src='/images/hero-img.jpg' />
       </HeroImage>
       <Swoop src='/swoop.svg' />
     </Wrapper>
